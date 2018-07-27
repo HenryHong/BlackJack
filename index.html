@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Blackjack Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1> Blackjack Game </h1>
+	<div>
+		<p style="display:inline">Dealer's Hand: </p>
+		<p id="dhand" style="display:inline"></p>
+	</div>
+	<div>
+		<p style="display:inline"> Dealer's Hand Value: </p>
+		<p id="dval" style="display:inline"></p>
+		<p></p>
+    </div>
+	
+	<div> 
+		<p style="display:inline">Player's Hand: </p>
+		<p id="phand" style="display:inline"></p>
+	</div>
+	<div>
+		<p style="display:inline"> Player's Hand Value: </p>
+		<p id="pval" style="display:inline"></p>
+		<p></p>
+    </div>
+	
+	
+	<div>
+		<button class="w3-btn w3-blue" onclick="hit()">HIT</button>
+		<button class="w3-btn w3-blue" onclick="stay()">STAY</button>
+	</div>
+	
+	<h3 id="result">Would you like to HIT or STAY?</h3>
+	<p></p>
+	<button class="w3-btn w3-grey" onclick="location.reload()">New Game</button>
+	
+    <script src="script.js"></script>
+</body>
+</html>
